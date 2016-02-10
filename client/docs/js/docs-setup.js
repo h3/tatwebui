@@ -32,6 +32,15 @@ NG_DOCS={
     },
     {
       "section": "api",
+      "id": "TatUi.components:messageCreateForm",
+      "shortName": "messageCreateForm",
+      "type": "directive",
+      "moduleName": "TatUi",
+      "shortDescription": "Component for create message form",
+      "keywords": "api component components create createmessage current directive form function message msg post tatui topic"
+    },
+    {
+      "section": "api",
       "id": "TatUi.components:messageFilter",
       "shortName": "messageFilter",
       "type": "directive",

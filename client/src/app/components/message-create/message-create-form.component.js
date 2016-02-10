@@ -33,7 +33,15 @@ angular.module('TatUi').component('messageCreateForm',
     self.topic = $stateParams.topic;
     self.view = $state.current.name;
     self.currentMessage = '';
+    self.filterDialog = $rootScope.filterDialog;
+
     self.config = appConfiguration.viewconfigs[self.view];
+    self.toggleFilterDialog = $rootScope.toggleFilterDialog;
+
+    //self.toggleFilterDialog = function(){
+    //  self.filterDialog.visible = !self.filterDialog.visible;
+    //  $rootScope.$broadcast('filter-dialog-toggled', self.filterDialog.visible);
+    //};
 
     /**
      * @ngdoc function
