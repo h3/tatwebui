@@ -1,5 +1,5 @@
 <form method="post" action="/">
-  <h1>aA{{ MessageCreateForm.filterDialog }}</h1>
+
   <div class="tat-msg-input">
     <textarea dir="auto" name="msg"
       ng-enter="MessageCreateForm.createMessage()"
@@ -11,15 +11,6 @@
     <i class="icon-paper-plane fa fa-send-o"
       ng-click="MessageCreateForm.createMessage()"
       title="{{ 'shared_message_send' | translate }}"></i>
-  </div>
-
-  <div class="btn-group">
-    <a class="btn btn-default" ng-click="toggleFilterDialog()" ng-class="{'open': MessageCreateForm.data.filterDialog.visible}">
-      <i class="fa fa-filter"></i>
-    </a>
-    <a class="btn btn-default" title="Toggle display replies" ng-click="ctrl.expandReplies = !ctrl.expandReplies" ng-class="{'open': ctrl.expandReplies}">
-      <i ng-class="ctrl.expandReplies ? 'fa fa-compress': 'fa fa-expand'"></i>
-    </a>
   </div>
 
   <div ng-if="ctrl.currentMessage.length > 0" class="tat-remaining-chars" ng-hide="!createMessageFocus">

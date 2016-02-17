@@ -31,7 +31,8 @@ angular.module('TatUi')
       isNotificationsOffTopic: false,
       isPresencesOpen: false,
       topic: {},
-      viewsEnabled: false
+      viewsEnabled: false,
+      hello: 'test123'
     };
 
     var views = [];
